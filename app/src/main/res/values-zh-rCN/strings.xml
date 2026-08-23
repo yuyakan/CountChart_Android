@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">李</string>
+    <string name="name_tom">王</string>
+    <string name="name_bob">张</string>
+    <string name="name_casey">刘</string>
+    <string name="name_brian">陈</string>
+
+    <string name="item_label">项目</string>
+
+    <string name="result">结果</string>
+    <string name="title">标题</string>
+    <string name="text">文本</string>
+    <string name="graph">图形</string>
+    <string name="background">背景</string>
+    <string name="button">按钮</string>
+
+    <string name="count_width">计数步长</string>
+
+    <string name="max_alert_text">数据太多</string>
+    <string name="max_alert_message">请将数据数量限制在 10 个或更少</string>
+
+    <string name="new_data">创建新图表</string>
+
+    <string name="menu">菜单</string>
+    <string name="main">图表</string>
+
+    <string name="total">合计</string>
+
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="value">数值</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+
+    <string name="edit">编辑</string>
+    <string name="done">完成</string>
+
+    <string name="sort_entry">默认顺序</string>
+    <string name="sort_descending">从高到低</string>
+    <string name="sort_ascending">从低到高</string>
+
+    <string name="bar_chart">柱状</string>
+    <string name="pie_chart">饼图</string>
+    <string name="ranking">排名</string>
+
+    <string name="groups">分组</string>
+    <string name="new_group">新建分组</string>
+    <string name="group_name">分组名称</string>
+    <string name="assign_items">分配项目</string>
+    <string name="no_group">无分组</string>
+    <string name="no_groups_yet">请在编辑模式下创建分组并分配项目。</string>
+
+    <string name="save_as_template">将名称保存为模板</string>
+    <string name="templates">模板</string>
+    <string name="delete_template">删除</string>
+
+    <string name="duplicate">复制</string>
+</resources>

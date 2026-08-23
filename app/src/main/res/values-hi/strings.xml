@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">आन्या</string>
+    <string name="name_tom">आरव</string>
+    <string name="name_bob">विहान</string>
+    <string name="name_casey">सान्या</string>
+    <string name="name_brian">अर्जुन</string>
+
+    <string name="item_label">आइटम</string>
+
+    <string name="result">परिणाम</string>
+    <string name="title">शीर्षक</string>
+    <string name="text">टेक्स्ट</string>
+    <string name="graph">ग्राफ़</string>
+    <string name="background">पृष्ठभूमि</string>
+    <string name="button">बटन</string>
+
+    <string name="count_width">गणना चौड़ाई</string>
+
+    <string name="max_alert_text">बहुत अधिक डेटा</string>
+    <string name="max_alert_message">कृपया डेटा की संख्या 10 या उससे कम रखें।</string>
+
+    <string name="new_data">नया ग्राफ़ बनाएँ</string>
+
+    <string name="menu">मेन्यू</string>
+    <string name="main">चार्ट</string>
+
+    <string name="total">कुल</string>
+
+    <string name="add">जोड़ें</string>
+    <string name="delete">हटाएँ</string>
+    <string name="value">मान</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="ok">ठीक है</string>
+
+    <string name="edit">संपादित करें</string>
+    <string name="done">पूर्ण</string>
+
+    <string name="sort_entry">डिफ़ॉल्ट क्रम</string>
+    <string name="sort_descending">सबसे अधिक पहले</string>
+    <string name="sort_ascending">सबसे कम पहले</string>
+
+    <string name="bar_chart">बार</string>
+    <string name="pie_chart">पाई</string>
+    <string name="ranking">रैंकिंग</string>
+
+    <string name="groups">समूह</string>
+    <string name="new_group">नया समूह</string>
+    <string name="group_name">समूह का नाम</string>
+    <string name="assign_items">आइटम असाइन करें</string>
+    <string name="no_group">कोई समूह नहीं</string>
+    <string name="no_groups_yet">संपादन मोड में एक समूह बनाएँ और आइटम असाइन करें।</string>
+
+    <string name="save_as_template">नाम को टेम्पलेट के रूप में सहेजें</string>
+    <string name="templates">टेम्पलेट</string>
+    <string name="delete_template">हटाएँ</string>
+
+    <string name="duplicate">डुप्लिकेट</string>
+</resources>

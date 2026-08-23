@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">Emilia</string>
+    <string name="name_tom">Noah</string>
+    <string name="name_bob">Leon</string>
+    <string name="name_casey">Mia</string>
+    <string name="name_brian">Emma</string>
+
+    <string name="item_label">Element</string>
+
+    <string name="result">Ergebnis</string>
+    <string name="title">Titel</string>
+    <string name="text">Text</string>
+    <string name="graph">Grafik</string>
+    <string name="background">Hintergrund</string>
+    <string name="button">Schaltfläche</string>
+
+    <string name="count_width">Zählschritt</string>
+
+    <string name="max_alert_text">Zu viele Daten</string>
+    <string name="max_alert_message">Bitte begrenzen Sie die Anzahl der Daten auf 10 oder weniger</string>
+
+    <string name="new_data">Ein neues Diagramm erstellen</string>
+
+    <string name="menu">Menü</string>
+    <string name="main">Diagramm</string>
+
+    <string name="total">Gesamt</string>
+
+    <string name="add">Hinzufügen</string>
+    <string name="delete">Löschen</string>
+    <string name="value">Wert</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">Bearbeiten</string>
+    <string name="done">Fertig</string>
+
+    <string name="sort_entry">Standardreihenfolge</string>
+    <string name="sort_descending">Höchste zuerst</string>
+    <string name="sort_ascending">Niedrigste zuerst</string>
+
+    <string name="bar_chart">Balken</string>
+    <string name="pie_chart">Kreis</string>
+    <string name="ranking">Rangliste</string>
+
+    <string name="groups">Gruppen</string>
+    <string name="new_group">Neue Gruppe</string>
+    <string name="group_name">Gruppenname</string>
+    <string name="assign_items">Einträge zuweisen</string>
+    <string name="no_group">Keine Gruppe</string>
+    <string name="no_groups_yet">Erstelle eine Gruppe und weise im Bearbeitungsmodus Einträge zu.</string>
+
+    <string name="save_as_template">Name als Vorlage speichern</string>
+    <string name="templates">Vorlagen</string>
+    <string name="delete_template">Löschen</string>
+
+    <string name="duplicate">Duplizieren</string>
+</resources>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">Maria</string>
+    <string name="name_tom">João</string>
+    <string name="name_bob">Pedro</string>
+    <string name="name_casey">Ana</string>
+    <string name="name_brian">Miguel</string>
+
+    <string name="item_label">Item</string>
+
+    <string name="result">Resultado</string>
+    <string name="title">Título</string>
+    <string name="text">Texto</string>
+    <string name="graph">Gráfico</string>
+    <string name="background">Fundo</string>
+    <string name="button">Botão</string>
+
+    <string name="count_width">Largura da contagem</string>
+
+    <string name="max_alert_text">Demasiados dados</string>
+    <string name="max_alert_message">Limite o número de dados a 10 ou menos.</string>
+
+    <string name="new_data">Criar um novo gráfico</string>
+
+    <string name="menu">Menu</string>
+    <string name="main">Gráfico</string>
+
+    <string name="total">Total</string>
+
+    <string name="add">Adicionar</string>
+    <string name="delete">Eliminar</string>
+    <string name="value">Valor</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">Editar</string>
+    <string name="done">Concluído</string>
+
+    <string name="sort_entry">Ordem predefinida</string>
+    <string name="sort_descending">Do maior</string>
+    <string name="sort_ascending">Do menor</string>
+
+    <string name="bar_chart">Barras</string>
+    <string name="pie_chart">Circular</string>
+    <string name="ranking">Classificação</string>
+
+    <string name="groups">Grupos</string>
+    <string name="new_group">Novo grupo</string>
+    <string name="group_name">Nome do grupo</string>
+    <string name="assign_items">Atribuir itens</string>
+    <string name="no_group">Sem grupo</string>
+    <string name="no_groups_yet">Crie um grupo e atribua itens no modo de edição.</string>
+
+    <string name="save_as_template">Guardar nome como modelo</string>
+    <string name="templates">Modelos</string>
+    <string name="delete_template">Eliminar</string>
+
+    <string name="duplicate">Duplicar</string>
+</resources>

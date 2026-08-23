@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">田中</string>
+    <string name="name_tom">佐藤</string>
+    <string name="name_bob">山口</string>
+    <string name="name_casey">中村</string>
+    <string name="name_brian">前田</string>
+
+    <string name="item_label">項目</string>
+
+    <string name="result">結果</string>
+    <string name="title">タイトル</string>
+    <string name="text">テキスト</string>
+    <string name="graph">グラフ</string>
+    <string name="background">背景</string>
+    <string name="button">ボタン</string>
+
+    <string name="count_width">カウント幅</string>
+
+    <string name="max_alert_text">データ数が多すぎます</string>
+    <string name="max_alert_message">データ数は10個以下にして下さい</string>
+
+    <string name="new_data">新しいグラフを作成</string>
+
+    <string name="menu">メニュー</string>
+    <string name="main">グラフ</string>
+
+    <string name="total">合計</string>
+
+    <string name="add">追加</string>
+    <string name="delete">削除</string>
+    <string name="value">数値</string>
+    <string name="cancel">キャンセル</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">編集</string>
+    <string name="done">完了</string>
+
+    <string name="sort_entry">登録順</string>
+    <string name="sort_descending">大きい順</string>
+    <string name="sort_ascending">小さい順</string>
+
+    <string name="bar_chart">棒グラフ</string>
+    <string name="pie_chart">円グラフ</string>
+    <string name="ranking">ランキング</string>
+
+    <string name="groups">グループ</string>
+    <string name="new_group">新しいグループ</string>
+    <string name="group_name">グループ名</string>
+    <string name="assign_items">項目を割り当て</string>
+    <string name="no_group">グループなし</string>
+    <string name="no_groups_yet">編集モードでグループを作成し、項目を割り当ててください。</string>
+
+    <string name="save_as_template">名前をテンプレートに登録</string>
+    <string name="templates">テンプレート</string>
+    <string name="delete_template">削除</string>
+
+    <string name="duplicate">複製</string>
+</resources>

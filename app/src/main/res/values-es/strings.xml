@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">Daniel</string>
+    <string name="name_tom">Sofía</string>
+    <string name="name_bob">Paula</string>
+    <string name="name_casey">Lucas</string>
+    <string name="name_brian">Hugo</string>
+
+    <string name="item_label">Elemento</string>
+
+    <string name="result">Resultado</string>
+    <string name="title">Título</string>
+    <string name="text">Texto</string>
+    <string name="graph">Gráfico</string>
+    <string name="background">Fondo</string>
+    <string name="button">Botón</string>
+
+    <string name="count_width">Incremento</string>
+
+    <string name="max_alert_text">Demasiados datos</string>
+    <string name="max_alert_message">Por favor, limite el número de datos a 10 o menos</string>
+
+    <string name="new_data">Crear un nuevo gráfico</string>
+
+    <string name="menu">Menú</string>
+    <string name="main">Gráfico</string>
+
+    <string name="total">Total</string>
+
+    <string name="add">Añadir</string>
+    <string name="delete">Eliminar</string>
+    <string name="value">Valor</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">Editar</string>
+    <string name="done">Listo</string>
+
+    <string name="sort_entry">Orden predeterminado</string>
+    <string name="sort_descending">Mayor primero</string>
+    <string name="sort_ascending">Menor primero</string>
+
+    <string name="bar_chart">Barras</string>
+    <string name="pie_chart">Circular</string>
+    <string name="ranking">Clasificación</string>
+
+    <string name="groups">Grupos</string>
+    <string name="new_group">Nuevo grupo</string>
+    <string name="group_name">Nombre del grupo</string>
+    <string name="assign_items">Asignar elementos</string>
+    <string name="no_group">Sin grupo</string>
+    <string name="no_groups_yet">Crea un grupo y asigna elementos en el modo de edición.</string>
+
+    <string name="save_as_template">Guardar nombre como plantilla</string>
+    <string name="templates">Plantillas</string>
+    <string name="delete_template">Eliminar</string>
+
+    <string name="duplicate">Duplicar</string>
+</resources>

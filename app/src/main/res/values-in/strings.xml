@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">Siti</string>
+    <string name="name_tom">Budi</string>
+    <string name="name_bob">Agus</string>
+    <string name="name_casey">Dewi</string>
+    <string name="name_brian">Rizki</string>
+
+    <string name="item_label">Item</string>
+
+    <string name="result">Hasil</string>
+    <string name="title">Judul</string>
+    <string name="text">Teks</string>
+    <string name="graph">Grafik</string>
+    <string name="background">Latar Belakang</string>
+    <string name="button">Tombol</string>
+
+    <string name="count_width">Lebar hitungan</string>
+
+    <string name="max_alert_text">Terlalu banyak data</string>
+    <string name="max_alert_message">Batasi jumlah data hingga 10 atau kurang.</string>
+
+    <string name="new_data">Buat grafik baru</string>
+
+    <string name="menu">Menu</string>
+    <string name="main">Bagan</string>
+
+    <string name="total">Total</string>
+
+    <string name="add">Tambah</string>
+    <string name="delete">Hapus</string>
+    <string name="value">Nilai</string>
+    <string name="cancel">Batal</string>
+    <string name="ok">OK</string>
+
+    <string name="edit">Edit</string>
+    <string name="done">Selesai</string>
+
+    <string name="sort_entry">Urutan default</string>
+    <string name="sort_descending">Tertinggi dulu</string>
+    <string name="sort_ascending">Terendah dulu</string>
+
+    <string name="bar_chart">Batang</string>
+    <string name="pie_chart">Lingkaran</string>
+    <string name="ranking">Peringkat</string>
+
+    <string name="groups">Grup</string>
+    <string name="new_group">Grup baru</string>
+    <string name="group_name">Nama grup</string>
+    <string name="assign_items">Tetapkan item</string>
+    <string name="no_group">Tanpa grup</string>
+    <string name="no_groups_yet">Buat grup dan tetapkan item dalam mode edit.</string>
+
+    <string name="save_as_template">Simpan nama sebagai templat</string>
+    <string name="templates">Templat</string>
+    <string name="delete_template">Hapus</string>
+
+    <string name="duplicate">Duplikat</string>
+</resources>

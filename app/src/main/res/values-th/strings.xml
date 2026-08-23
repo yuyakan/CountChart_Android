@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">แนน</string>
+    <string name="name_tom">โต้ง</string>
+    <string name="name_bob">บอย</string>
+    <string name="name_casey">ฝ้าย</string>
+    <string name="name_brian">บีม</string>
+
+    <string name="item_label">รายการ</string>
+
+    <string name="result">ผลลัพธ์</string>
+    <string name="title">ชื่อ</string>
+    <string name="text">ข้อความ</string>
+    <string name="graph">กราฟ</string>
+    <string name="background">พื้นหลัง</string>
+    <string name="button">ปุ่ม</string>
+
+    <string name="count_width">ความกว้างการนับ</string>
+
+    <string name="max_alert_text">ข้อมูลมากเกินไป</string>
+    <string name="max_alert_message">โปรดจำกัดจำนวนข้อมูลไว้ที่ 10 รายการหรือน้อยกว่า</string>
+
+    <string name="new_data">สร้างกราฟใหม่</string>
+
+    <string name="menu">เมนู</string>
+    <string name="main">แผนภูมิ</string>
+
+    <string name="total">รวม</string>
+
+    <string name="add">เพิ่ม</string>
+    <string name="delete">ลบ</string>
+    <string name="value">ค่า</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="ok">ตกลง</string>
+
+    <string name="edit">แก้ไข</string>
+    <string name="done">เสร็จ</string>
+
+    <string name="sort_entry">ลำดับเริ่มต้น</string>
+    <string name="sort_descending">มากไปน้อย</string>
+    <string name="sort_ascending">น้อยไปมาก</string>
+
+    <string name="bar_chart">แท่ง</string>
+    <string name="pie_chart">วงกลม</string>
+    <string name="ranking">อันดับ</string>
+
+    <string name="groups">กลุ่ม</string>
+    <string name="new_group">กลุ่มใหม่</string>
+    <string name="group_name">ชื่อกลุ่ม</string>
+    <string name="assign_items">กำหนดรายการ</string>
+    <string name="no_group">ไม่มีกลุ่ม</string>
+    <string name="no_groups_yet">สร้างกลุ่มและกำหนดรายการในโหมดแก้ไข</string>
+
+    <string name="save_as_template">บันทึกชื่อเป็นเทมเพลต</string>
+    <string name="templates">เทมเพลต</string>
+    <string name="delete_template">ลบ</string>
+
+    <string name="duplicate">ทำสำเนา</string>
+</resources>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">서연</string>
+    <string name="name_tom">민준</string>
+    <string name="name_bob">서준</string>
+    <string name="name_casey">지우</string>
+    <string name="name_brian">예준</string>
+
+    <string name="item_label">항목</string>
+
+    <string name="result">결과</string>
+    <string name="title">제목</string>
+    <string name="text">텍스트</string>
+    <string name="graph">그래프</string>
+    <string name="background">배경</string>
+    <string name="button">버튼</string>
+
+    <string name="count_width">카운트 폭</string>
+
+    <string name="max_alert_text">데이터가 너무 많습니다</string>
+    <string name="max_alert_message">데이터 수를 10개 이하로 제한해 주세요.</string>
+
+    <string name="new_data">새 그래프 만들기</string>
+
+    <string name="menu">메뉴</string>
+    <string name="main">그래프</string>
+
+    <string name="total">합계</string>
+
+    <string name="add">추가</string>
+    <string name="delete">삭제</string>
+    <string name="value">값</string>
+    <string name="cancel">취소</string>
+    <string name="ok">확인</string>
+
+    <string name="edit">편집</string>
+    <string name="done">완료</string>
+
+    <string name="sort_entry">기본 순서</string>
+    <string name="sort_descending">높은 순</string>
+    <string name="sort_ascending">낮은 순</string>
+
+    <string name="bar_chart">막대</string>
+    <string name="pie_chart">원형</string>
+    <string name="ranking">순위</string>
+
+    <string name="groups">그룹</string>
+    <string name="new_group">새 그룹</string>
+    <string name="group_name">그룹 이름</string>
+    <string name="assign_items">항목 지정</string>
+    <string name="no_group">그룹 없음</string>
+    <string name="no_groups_yet">편집 모드에서 그룹을 만들고 항목을 지정하세요.</string>
+
+    <string name="save_as_template">이름을 템플릿으로 저장</string>
+    <string name="templates">템플릿</string>
+    <string name="delete_template">삭제</string>
+
+    <string name="duplicate">복제</string>
+</resources>

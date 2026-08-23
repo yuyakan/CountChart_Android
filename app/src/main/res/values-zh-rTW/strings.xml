@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">CounterGraph</string>
+
+    <!-- Sample names -->
+    <string name="name_ann">怡君</string>
+    <string name="name_tom">家豪</string>
+    <string name="name_bob">志明</string>
+    <string name="name_casey">淑芬</string>
+    <string name="name_brian">俊傑</string>
+
+    <string name="item_label">項目</string>
+
+    <string name="result">結果</string>
+    <string name="title">標題</string>
+    <string name="text">文字</string>
+    <string name="graph">圖表</string>
+    <string name="background">背景</string>
+    <string name="button">按鈕</string>
+
+    <string name="count_width">計數寬度</string>
+
+    <string name="max_alert_text">資料過多</string>
+    <string name="max_alert_message">請將資料數量限制在 10 筆以內。</string>
+
+    <string name="new_data">建立新圖表</string>
+
+    <string name="menu">選單</string>
+    <string name="main">圖表</string>
+
+    <string name="total">合計</string>
+
+    <string name="add">新增</string>
+    <string name="delete">刪除</string>
+    <string name="value">數值</string>
+    <string name="cancel">取消</string>
+    <string name="ok">確定</string>
+
+    <string name="edit">編輯</string>
+    <string name="done">完成</string>
+
+    <string name="sort_entry">預設順序</string>
+    <string name="sort_descending">由高至低</string>
+    <string name="sort_ascending">由低至高</string>
+
+    <string name="bar_chart">長條</string>
+    <string name="pie_chart">圓餅</string>
+    <string name="ranking">排名</string>
+
+    <string name="groups">群組</string>
+    <string name="new_group">新增群組</string>
+    <string name="group_name">群組名稱</string>
+    <string name="assign_items">指派項目</string>
+    <string name="no_group">無群組</string>
+    <string name="no_groups_yet">請在編輯模式下建立群組並指派項目。</string>
+
+    <string name="save_as_template">將名稱儲存為範本</string>
+    <string name="templates">範本</string>
+    <string name="delete_template">刪除</string>
+
+    <string name="duplicate">複製</string>
+</resources>
