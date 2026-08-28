@@ -17,7 +17,9 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.activity.compose.LocalActivity
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -32,6 +34,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.kanbe1365.countergraph.R
+import com.kanbe1365.countergraph.ad.InterstitialAdManager
 import com.kanbe1365.countergraph.data.ChartType
 import com.kanbe1365.countergraph.ui.theme.LocalBrandColor
 
@@ -52,6 +55,13 @@ fun FileScreen(
         },
     )
     var selected by rememberSaveable { mutableStateOf(ChartType.BAR) }
+    val activity = LocalActivity.current
+
+    // メニューから詳細画面へ遷移した直後。条件を満たせば広告を表示する。
+    // iOS の FileView.onAppear に相当。
+    LaunchedEffect(Unit) {
+        activity?.let { InterstitialAdManager.presentIfReady(it) }
+    }
 
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,

@@ -25,11 +25,14 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.activity.compose.LocalActivity
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import kotlinx.coroutines.delay
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -42,6 +45,9 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.kanbe1365.countergraph.R
+import com.kanbe1365.countergraph.ad.AdCounter
+import com.kanbe1365.countergraph.ad.InterstitialAdManager
+import com.kanbe1365.countergraph.ad.ReviewManager
 import com.kanbe1365.countergraph.data.CountFile
 import com.kanbe1365.countergraph.ui.theme.LocalBrandColor
 import androidx.compose.ui.graphics.PathEffect
@@ -58,6 +64,16 @@ fun MenuScreen(
     val files by viewModel.files.collectAsStateWithLifecycle()
     var editing by remember { mutableStateOf(false) }
     val brand = LocalBrandColor.current
+    val activity = LocalActivity.current
+
+    // メニュー画面が前面に来るたび（起動時・詳細画面から戻った時）に、
+    // レビュー要求の機会をカウントし、詳細画面遷移時にすぐ表示できるよう広告も先読みする。
+    // iOS の MenuView.onAppear に相当。
+    LaunchedEffect(Unit) {
+        activity?.let { InterstitialAdManager.loadInterstitial(it) }
+        delay(500)
+        activity?.let { ReviewManager.recordOpportunityAndRequestReviewIfNeeded(it) }
+    }
 
     Surface(
         modifier = Modifier.fillMaxSize(),
@@ -96,7 +112,10 @@ fun MenuScreen(
                     canMoveUp = index > 0,
                     canMoveDown = index < files.size - 1,
                     onClick = { if (!editing) onOpenFile(file.id) },
-                    onDuplicate = { viewModel.duplicate(file) },
+                    onDuplicate = {
+                        viewModel.duplicate(file)
+                        AdCounter.increment(amount = 3) // 複製は3回分
+                    },
                     onDelete = { viewModel.remove(file) },
                     onMoveUp = { viewModel.move(index, index - 1) },
                     onMoveDown = { viewModel.move(index, index + 1) },
@@ -107,7 +126,10 @@ fun MenuScreen(
             // 新規追加カード
             item {
                 AddCard(
-                    onClick = { viewModel.add() },
+                    onClick = {
+                        viewModel.add()
+                        AdCounter.increment(amount = 3) // 追加は3回分
+                    },
                     modifier = Modifier.padding(vertical = 6.dp),
                 )
             }

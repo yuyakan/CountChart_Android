@@ -25,8 +25,8 @@ android {
         applicationId = "com.kanbe1365.countergraph"
         minSdk = 24
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,6 +43,16 @@ android {
     }
 
     buildTypes {
+        debug {
+            // DEBUG ビルドは Google 公式のテスト用 AdMob ID を使う（無効トラフィック防止）。
+            // iOS 版の Interstitial.useTestAd = true に相当。
+            manifestPlaceholders["admobAppId"] = "ca-app-pub-3940256099942544~3347511713"
+            buildConfigField(
+                "String",
+                "ADMOB_INTERSTITIAL_UNIT_ID",
+                "\"ca-app-pub-3940256099942544/1033173712\"",
+            )
+        }
         release {
             // keystore.properties がある場合のみリリース署名を適用
             if (keystorePropertiesFile.exists()) {
@@ -54,6 +64,13 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            // RELEASE ビルドは本番の AdMob ID を使う。
+            manifestPlaceholders["admobAppId"] = "ca-app-pub-3155724310732667~7168435732"
+            buildConfigField(
+                "String",
+                "ADMOB_INTERSTITIAL_UNIT_ID",
+                "\"ca-app-pub-3155724310732667/4542272393\"",
+            )
         }
     }
     compileOptions {
@@ -62,6 +79,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -77,6 +95,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
+    // AdMob（インタースティシャル広告）と UMP（同意管理）、Play In-App Review。
+    implementation(libs.play.services.ads)
+    implementation(libs.user.messaging.platform)
+    implementation(libs.play.review.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)

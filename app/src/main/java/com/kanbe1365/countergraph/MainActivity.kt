@@ -18,6 +18,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import com.kanbe1365.countergraph.ad.ConsentManager
 import com.kanbe1365.countergraph.data.Prefs
 import com.kanbe1365.countergraph.data.Strings
 import com.kanbe1365.countergraph.ui.FileScreen
@@ -33,6 +34,8 @@ class MainActivity : ComponentActivity() {
         // データ層が SharedPreferences / 文字列リソースを使えるよう初期化する。
         Prefs.init(this)
         Strings.init(this)
+        // 広告の同意フロー（UMP）→ AdMob 初期化 → 広告先読み。iOS の gatherConsent() に相当。
+        ConsentManager.gatherConsent(this)
         enableEdgeToEdge()
         setContent {
             CounterGraphTheme {

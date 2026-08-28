@@ -36,7 +36,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.activity.compose.LocalActivity
 import com.kanbe1365.countergraph.R
+import com.kanbe1365.countergraph.ad.AdCounter
+import com.kanbe1365.countergraph.ad.InterstitialAdManager
 import com.kanbe1365.countergraph.data.BarOrientation
 import com.kanbe1365.countergraph.data.ChartEntry
 import com.kanbe1365.countergraph.data.ChartSortOrder
@@ -49,6 +52,7 @@ fun BarTab(
     modifier: Modifier = Modifier,
 ) {
     val brand = LocalBrandColor.current
+    val activity = LocalActivity.current
     val revision by viewModel.revision.collectAsStateWithLifecycleCompat()
     val title by viewModel.title.collectAsStateWithLifecycleCompat()
     val countUnit by viewModel.countUnit.collectAsStateWithLifecycleCompat()
@@ -76,7 +80,16 @@ fun BarTab(
                 orientation = if (orientation == BarOrientation.VERTICAL) BarOrientation.HORIZONTAL else BarOrientation.VERTICAL
             }
             SortMenuButton(current = sortOrder, onSelect = { sortOrder = it }, tint = brand)
-            EditToggle(editing = editing, brand = brand) { editing = !editing }
+            EditToggle(editing = editing, brand = brand) {
+                // 編集モードから「完了」を押したときにカウントし、条件を満たせば広告を表示する。
+                // iOS の BarChartView の「完了」ボタンに相当。
+                val wasEditing = editing
+                editing = !editing
+                if (wasEditing) {
+                    AdCounter.increment(amount = 2) // 編集完了は2回分
+                    activity?.let { InterstitialAdManager.presentIfReady(it) }
+                }
+            }
         }
 
         TabTitle(title = title, brand = brand, editing = editing, onEditTitle = { showRename = true })
